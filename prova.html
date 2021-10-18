@@ -1,0 +1,35 @@
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<form method="POST" action="prova.php">
+  <div id="formulario">
+    <div class="form-group">
+      <label for="aparelho" class="form-label">Aparelho</label>
+      <input type="text" class="form-control" id="aparelho" name="aparelho[]" aria-describedby="aparelhohelp"
+        placeholder="Aparelho eletro">
+      <label for="potencia" class="form-label">Pot&ecirc;ncia</label>
+      <input type="text" class="form-control" id="potencia" name="potencia[]" aria-describedby="potenciahelp"
+        placeholder="Potência do aparelho eletro">
+      <label for="Horas Ligado" class="form-label">Tempo de utilização</label>
+      <input type="text" class="form-control" id="tempo" name="tempo[]" aria-describedby="potenciahelp"
+        placeholder="Potência do aparelho eletro">
+     
+
+    </div>
+  </div>
+  <div class="form-group">
+    <button type="button" id="add" name="add" value="+">+</button>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+ 
+</form>
+
+<script>
+  $("#add").click(function () {
+    $("#formulario").append('<div class="form-group"><label for="aparelho">Aparelho</label><input type = "text" id = "aparelho" name = "aparelho[]" aria-describedby="aparelhohelp" placeholder = "Aparelho eletro"><label for="potencia" class="form-label" >Pot&ecirc;ncia</label><input type="text" class="form-control" id="potencia" name="potencia[]" aria-describedby="potenciahelp" placeholder="Potência do aparelho eletro"><label for="Horas Ligado" class="form-label" >Tempo de utilização</label><input type="text" class="form-control" id="tempo" name="tempo[]" aria-describedby="potenciahelp" placeholder="Potência do aparelho eletro"></div>' );
+});
+</script>
