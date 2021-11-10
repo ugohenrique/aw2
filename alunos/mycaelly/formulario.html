@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+
+<body>
+
+    <form method="post" action="calculo.php">
+        <div id="formulario">
+        <div>Aparelho: <input type="text" name="aparelho" value=""></div>
+        <div>Qtd de watts/hora: <input type="text" name="qtd_watts" value=""></div>
+        <div>Qtd de horas que o equipamento fica ligado: <input type="text" name="qtd_horas" value=""></div>
+        <div>Qtd de dias que o equipamento é usado: <input type="text" name="qtd_dias" value=""></div>
+        <button type="button" id="add-campo"> Digitar Outro </button>
+    </div>
+    <input type="submit" name="submit" value="Submit">
+    </form>
+
+    <script>
+        //https://api.jquery.com/click/
+        $("#add-campo").click(function () {
+            //https://api.jquery.com/append/
+            $("#formulario").append('<div id="formulario"><div>Aparelho: <input type="text" name="aparelho" value=""></div><div>Qtd de watts/hora: <input type="text" name="qtd_watts" value=""></div><div>Qtd de horas que o equipamento fica ligado: <input type="text" name="qtd_horas" value=""></div><div>Qtd de dias que o equipamento é usado: <input type="text" name="qtd_dias" value=""></div><button type="button" id="add-campo"> Digitar Outro </button></div>');
+        });
+    </script>
+</body>
+
+</html>

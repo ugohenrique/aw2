@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Prova de AW2</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <!-- 
+    Calcule o consumo de energia dos equipamentos eletro-eletrônicos de uma residência e dar a respostas em Kw/H.
+
+    O usuario deve entrar com o nome do aparelho, o seu consumo em Watts/hora e a quantidade de horas que ele fica ligado por dia.
+         
+    Você deve permitir que seja adicionado quantos aparelhos forem possíveis.
+         
+    A sua aplicação deve calcular o consumo mensal de cada aparelho em Kw/h note que a entrada esta em Watts/hora.
+         
+    A sua aplicação deve calcular o consumo total da casa.
+         
+    A sua aplicação deve gravar em um arquivo, o nome de cada equipamento, o consumo mensal dele em Kw/H
+    -->
+
+    <h2> Teste - Consumo de eletrodomésticos</h2>
+    <form action="index.php" method="post" target="_blank">
+        <label for="produto">Entre com o nome do produto:</label>
+        <input type="text" id="produto" name="produto"><br><br>
+
+        <label for="tempo">Entre com a quantidade, em horas, que este produto fica ligado por dia:</label>
+        <input type="number" id="tempo" name="tempo"><br><br>
+
+        <label for="potencia">Entre com a potência, em W/h, deste produto:</label>
+        <input type="number" id="potencia" name="potencia"><br><br>
+        <p><input type="submit" /></p>
+    </form>
+
+</body>
+</html>

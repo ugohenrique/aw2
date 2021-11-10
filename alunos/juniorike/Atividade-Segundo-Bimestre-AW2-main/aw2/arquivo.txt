@@ -1,0 +1,11 @@
+nome:  - Consumo mensal(Kw/h):0
+ ---Consumo Final: 0---      
+
+
+nome: Tv - Consumo mensal(Kw/h):1.47
+nome: Radio - Consumo mensal(Kw/h):0.18
+nome:  - Consumo mensal(Kw/h):0
+ ---Consumo Final: 1.65---      
+
+
+nome: TV - Consumo mensal(Kw/h):6

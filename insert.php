@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "ifsp";
+$dbname = "pdwel_terca";
 
 $nome = $_GET['nome'];
 $sobrenome = $_GET['sobrenome'];
@@ -12,8 +12,9 @@ try {
   // set the PDO error mode to exception
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   $sql = "INSERT INTO MyGuests (firstname, lastname, email)
-  VALUES (' $nome ' , ' $sobrenome ' ,  ' $email ')";
+  VALUES ('$nome' , '$sobrenome' ,  '$email')";
   // use exec() because no results are returned
+  echo $sql . '<br>';
   $conn->exec($sql);
   echo "New record created successfully";
 } catch(PDOException $e) {

@@ -2,12 +2,12 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "ifsp";
+$dbname = "pdwel_terca";
 
 try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
   // set the PDO error mode to exception
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  //$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
   // sql to create table
   $sql = "CREATE TABLE MyGuests (

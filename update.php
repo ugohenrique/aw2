@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "ifsp";
+$dbname = "pdwel_segunda";
 
 $id = $_GET['id'];
 $sobrenome = $_GET['sobrenome'];
@@ -12,7 +12,7 @@ try {
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
   $sql = "UPDATE MyGuests SET lastname='$sobrenome' WHERE id=$id";
-  echo $sql;
+  echo $sql . '<br>';
   // Prepare statement
   $stmt = $conn->prepare($sql);
 
